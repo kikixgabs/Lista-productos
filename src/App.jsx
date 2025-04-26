@@ -24,6 +24,7 @@ function App() {
 
   return (
     <>
+      "🛒🛒"
       <input placeholder='Ingresa el item' value={item} onChange={(e) => setItem(e.target.value)}></input><br/>
       <button onClick={ManejadorBoton}>Cargar item</button>
       <ul>
