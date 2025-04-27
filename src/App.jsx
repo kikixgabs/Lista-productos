@@ -35,7 +35,7 @@ function App() {
         placeholder="Ingresa el item" 
         value={item} 
         onChange={(e) => setItem(e.target.value)} 
-      />
+      /><br/>
       <button onClick={ManejadorBoton}>Cargar item</button>
       
       <ul>

@@ -40,68 +40,96 @@
 .read-the-docs {
   color: #888;
 }
+/* App.css */
 
-
-/* Estilos para la lista */
-ul {
-  list-style-type: none;
+/* Estilo general para la aplicación */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 0;
-}
-
-.item {
-  
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  background-color: #232328; /* Fondo claro para el body */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  color: #333; /* Color de texto más oscuro */
 }
 
-.item:hover {
-  background-color: #472bfd;
+/* Contenedor principal */
+div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
-/* Estilos para el botón de eliminar */
-.eliminar-btn {
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.eliminar-btn:hover {
-  background-color: #c0392b;
-}
-
-.eliminar-btn:active {
-  transform: scale(0.98);
-}
-
-/* Agregar algo de margen y padding al input y botón de agregar */
+/* Estilo para la caja de entrada y botón */
 input {
-  padding: 8px;
-  margin: 10px 0;
-  border-radius: 5px;
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-  padding: 8px 16px;
-  background-color: #2ecc71;
+  padding: 10px 15px;
+  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #27ae60;
+  background-color: #45a049;
 }
 
-button:active {
-  transform: scale(0.98);
+/* Lista de tareas */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Estilo de cada ítem */
+li {
+  background-color: #ffffff; /* Fondo blanco para los items */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+li:hover {
+  background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+li button {
+  background-color: #f44336;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #e53935;
+}
+
+/* Estilo cuando el ítem está completado */
+.completed {
+  text-decoration: line-through;
+  color: #888;
 }
