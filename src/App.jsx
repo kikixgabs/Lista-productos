@@ -31,6 +31,7 @@ function App() {
 
   return (
     <>
+      <h1>🛒</h1>
       <input 
         placeholder="Ingresa el item" 
         value={item} 
